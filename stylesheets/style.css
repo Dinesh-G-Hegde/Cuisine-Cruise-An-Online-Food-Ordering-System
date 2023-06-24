@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-size: 15px; */
+    max-height: fit-content;
+}
+
+.cards{
+    display:grid;
+    place-content: center;
+    height: 100vh;
+    padding: auto 15vw auto;
+    color:white;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Scroll Bar Design */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4); 
+}
+/* --------------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Hide arrow keys in number inputs */
+
+/* Chrome, Safari, Edge, Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+
+.container-fluid{
+    text-align: center;
+    justify-content: center;
+    margin:15vw;
+    margin-left: 0;
+    background-color: rgba(177, 177, 177, 0.15);
+    backdrop-filter: blur(30px) saturate(10%) contrast(1000%) brightness(0%);
+    border-radius: 15px;
+}
+
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0.11);
+    gap:10px;
+}
+.input-group-text svg{
+    color:white;
+} 
+.input-group label{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+}
+
+
+
+.input-group input,
+.input-group textarea{
+    background-color: rgba(255, 255, 255, 0.024);
+    color:rgb(255, 255, 255);
+    border: black solid;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+/* textarea{
+    scrollbar-width: none;
+} */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
