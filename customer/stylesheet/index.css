@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    position: relative;
+    background: black;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./../../images/pagebg/user-index-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: auto;
+    vertical-align: middle;
+    height:100vh;
+    z-index: 1;
+
+}
+
+
+nav{
+    position:sticky;
+    width: 100%;
+    box-shadow: outset 15px white;
+}
+
+.navbar{
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.main-content{
+    display: block;
+    margin-top: 150px;
+}
+
+.card img{
+    overflow: hidden;
+    max-height: 250px;
+
+    width: auto;
+}
+/* 
+.col-auto a{
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+.intro-section{
+    /* filter:saturation(120%); */
+    position: relative;
+    height: auto;
+    width: auto;
+    border: none;
+    z-index: -1;
+}
+
+.container-fluid{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: auto;
+    max-width:95vw;
+    font-weight: 200;
+    scroll-behavior: smooth;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+    border: 4px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+    padding:15px;
+}
+
+.restaurants{
+    background: none;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Scroll Bar Design */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(178, 174, 174, 0.21); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(50, 40, 40, 0.114); 
+}
+/* --------------------------------------------------------------------------------------------- */
+
+.card{
+    transition: all 0.404s ease-in;
+    color:black;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+}

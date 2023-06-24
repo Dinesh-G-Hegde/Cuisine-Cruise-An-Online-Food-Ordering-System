@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    position: relative;
+    background: black;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./../../images/pagebg/admin-index-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: auto;
+    vertical-align: middle;
+    height:100vh;
+    z-index: 1;
+}
+.container{
+    margin:0;
+}
+
+nav{
+    width: 100%;
+    /* position:absolute; */
+    /* box-shadow: -15px white; */
+}
+
+.navbar{
+    top:0;
+    flex-direction: nowrap;
+    justify-content: center;
+}
+
+.food-background{
+    overflow:hidden;
+}
+.intro-section{
+    display: grid;
+    border: none;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1vw;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.d-flex{
+    gap : 1vw;
+    align-content: space-around;
+}
+
+.container-fluid{
+    text-align: center;
+    margin:5vw;
+    margin-left: 0;
+    padding: 5vw;
+    background-color: rgba(177, 177, 177, 0.06);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px aqua;
+    border: 2px solid aqua;
+}
+
+.card{
+    transition: all 0.404s ease-in;
+    color:black;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+}

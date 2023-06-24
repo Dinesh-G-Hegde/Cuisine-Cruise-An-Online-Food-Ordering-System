@@ -1,0 +1,64 @@
+body{
+    position: relative;
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../../images/pagebg/restaurants-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: auto;
+    vertical-align: middle;
+    height:100vh;
+    z-index: 1;
+    color: white;
+}
+
+nav{
+    position:sticky;
+    width: 100%;
+    box-shadow: outset 15px white;
+}
+
+.navbar{
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.cards{
+    display:grid;
+    place-content: center;
+    /* height: 100vh; */
+    /* padding:15vw; */
+    color:white;
+}
+
+.container-fluid{
+    text-align: center;
+    justify-content: center;
+    margin:5vw;
+    margin-left: 0;
+    padding: 15px;
+    background-color: rgba(177, 177, 177, 0.06);
+    backdrop-filter: blur(10px) saturate(50%) brightness(90%);
+    border-radius: 15px;
+    border:2px solid white;
+    box-shadow: 5px 5px 20px var(--bs-light);
+}
+
+.input-group label{
+    color: rgb(254, 119, 0);
+    font-weight: 800;
+}
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0.11);
+    gap:10px;
+    padding: 3px;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
